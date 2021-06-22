@@ -1,0 +1,128 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    width: 100vw;
+    background-color: #2874f0; 
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+
+}
+.logo{
+    display: flex;
+    align-items: center;
+    
+}
+.logo img{
+    width: 100px;
+    padding: 0 20px 0 20px;
+    height: 70px;
+    width: 132px;
+
+}
+nav ul{
+    display: flex;
+    justify-content: flex-start;
+
+}
+nav ul li{
+    list-style: none;
+    padding: 0 10px;
+}
+nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    
+}
+nav ul li a:hover{
+    font-weight: bold;
+    color: #2874f0;
+    background-color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+/* a.active,a:hover{
+    background-color: rgb(255, 255, 255);
+    
+    transition: 0.5s;
+} */
+.search{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    
+    
+}
+.search input{
+    height: 30px;
+    width: 30vw;
+    margin: 0 0 0 7vw;
+}
+.btn{
+    background-color: white;
+    
+    border: 0.001px solid black;
+    width: 30px;
+    height: 34px;
+
+}
+.container{
+    background-color: rgb(151, 166, 167);
+    display: inline;
+    justify-content: center;
+}
+.slider{
+    height: 90vh;
+    width: calc(100vw- 40px);
+    display: flex;
+    align-items: center;
+    background-color: rgb(198, 204, 204);
+    border: gray;
+    overflow: hidden;
+}
+
+.slider img{
+    display: inline-block;
+
+    padding: 90px 15px 30px 25px;
+
+}
+.allcart{
+    background-color: rgb(247, 247, 218);
+    width: calc(100vw-60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+}
+
+/* .cart{
+    height: 50vh;
+    background-color: rgb(247, 247, 218);
+    width: calc(100vw-60px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    
+} */
+
+footer{
+    width: 100vw;
+    height: 40px;
+    background-color: #2874f0;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

@@ -1,0 +1,31 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.textCenter{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.green{
+    display: flex;
+    justify-content: center;
+    color: rgb(160, 201, 85);
+    align-items: center;
+}
+.lines{
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+}
+.items{
+    display: flex;
+    align-items: center;
+    display: inline;
+    padding: 30px;
+}
+.zoom:hover {
+    -ms-transform: scale(0.9); /* IE 9 */
+    -webkit-transform: scale(0.9); /* Safari 3-8 */
+    transform: scale(0.9); 
+  }
