@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,6 +10,7 @@
     <link rel="stylesheet" href="utlis.css">
     <link rel="stylesheet" href="slide.css">
     <link rel="stylesheet" href="resopnsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
 </head>
 <body>
@@ -17,17 +19,27 @@
             <div class="logo">
                 <img src="https://cdn131.picsart.com/361982933034211.png">
             </div>
-            <ul>
+            <ul class="nav-links">
+                <li>
+                    <div class="search">
+                        <input type="text" placeholder="Search for products, brands and more...">
+                        <button class="btn"  onclick="location.href='https://youtu.be/dQw4w9WgXcQ';">
+                        <img src="https://img.icons8.com/color/48/000000/search--v2.png" height="30px">
+                        </button>
+                    </div>
+                </li>
                 <li><a href="index.html">Home</a></li>
                 <li><a href="https://github.com/aakriti7x7">About</a></li>
                 <li><a href="https://twitter.com/MemesScreenshot?s=08">Contact</a></li>
+                
             </ul>
-            <div class="search">
-                <input type="text" placeholder="Search for products, brands and more...">
-                <button class="btn"  onclick="location.href='https://youtu.be/dQw4w9WgXcQ';">
-                <img src="https://img.icons8.com/color/48/000000/search--v2.png" height="30px">
-                </button>
+            <div class="idky">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
             </div>
+            
+
         </nav>
     </header>
     
@@ -131,13 +143,6 @@
                         Min 30% off
                     </p>
                 </div>
-                
-            
-            
-
-
-
-            
                 <div class="items">
                     <img class="zoom" src="https://source.unsplash.com/150x150/?fashion">
                 
@@ -198,11 +203,6 @@
                         Min 30% off
                     </p>
                 </div>
-
-            
-
-
-            
                 <div class="items">
                     <img class="zoom" src="https://source.unsplash.com/150x150/?kurti">
                 
@@ -299,20 +299,17 @@
         </script>
         
         <script>
-            function myFunction() {
-              var x = document.getElementById("navbar");
-              if (x.className === "nav") {
-                x.className += " responsive";
-              } else {
-                x.className = "nav";
-              }
-            }
-        </script>
+            
+            const idky = document.querySelector('.idky');
+            const nav= document.querySelector('.nav-links');
+            const navlink= document.querySelector('.nav-links li');
 
-        
-        
+            idky.addEventListener('click', ()=> {
+                nav.classList.toggle('open');
+            });
+            
+      </script>
 
-        
 
     </main>
 
