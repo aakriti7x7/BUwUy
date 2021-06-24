@@ -1,46 +1,83 @@
-@media screen and (max-width:990px) {
-    
-    body{
-        background-color: red;
-    }
-    nav{
-        flex-direction: column;
-    }
-    .logo{
+@media screen and (max-width: 1085px) {
+
+    .nav-links{
+        position: fixed;
+        right: 0px;
+        height: 50vh;
+        top: 1vh;
+        width: 60vh;
+        background-color: #2874f0;
         display: flex;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
-    nav ul{
-        justify-content: center;
+
+    nav ul li {
+        margin: 40px 0 0px 0;
+    }
+    
+    .search input{
+        height: 30px;
+        width: 27vw;
+        margin: 0 0 0 13vw; 
+    }
+
+    .idky div{ 
+        width: 25px;
+        height: 2px;
+        background-color: white;
+        margin: 5px;
+    }
+
+    .idky{
+        display: block;
+        cursor: pointer;
+        padding-left: 65vw;
+        z-index: 2;
+    }
+
+
+    .nav-links{
+        clip-path: circle(10px at 90% -10%);
+        -webkit-clip-path:  circle(10px at 90% -10%)
+    }
+
+    .nav-links.open{
+        clip-path: circle(1000px at 90% -10%);
+        -webkit-clip-path:  circle(1000px at 90% -10%)
     }
 
 }
-/* 
-@media screen and (max-width: 990px) {
-    .li a:not(:first-child) {display: none;}
-    .nav ul li a.icon {
-      float: right;
-      display: block;
-    }
-  }
-  
-  @media screen and (max-width: 990px) {
-    .nav.responsive {position: relative;}
-    .nav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .nav.responsive ul li a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-} */
 
-nav #icon{
-    color: white;
-    font-size: 30px;
-    line-height: 80px;
-    float: right;
+
+
+@media screen and (max-width: 600px) {
+    .search input{
+        height: 30px;
+        width: 50vw;
+        margin: 0 0 0 13vw; 
+    }
+}
+
+@media screen and (max-width: 710px) {
+    .idky{
+        padding-left: 50vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .idky{
+        padding-left: 30vw;
+    }
+    .search input{
+        height: 30px;
+        width: 40vw;
+        margin: 0 0 0 13vw; 
+    }
+}
+
+@media screen and (max-width: 280px) {
+    .idky{
+        padding-left: 8vw;
+    }
 }
